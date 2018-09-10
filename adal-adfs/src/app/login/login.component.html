@@ -1,0 +1,42 @@
+<div class="login-page-container" [@initialAnimation]>
+  <div class="table-container">
+    <div class="content-container">
+      <div class="login-control-container">
+        <div class="content">
+          <div class="title-container">
+            <div class="title">
+              <span class="heavy-font">A</span>
+              <span class="heavy-font">D</span>
+              <span class="light-font">F</span>
+              <span class="heavy-font">S</span>
+            </div>
+            <div class="title">
+              <span class="heavy-font">E</span>
+              <span class="heavy-font">X</span>
+              <span class="light-font">A</span>
+              <span class="heavy-font">M</span>
+              <span class="heavy-font">P</span>
+              <span class="heavy-font">L</span>
+              <span class="heavy-font">E</span>
+            </div>
+          </div>
+          <form [formGroup]="loginForm">
+
+            <div class="section">
+              <div class="control">
+                <button type="button"
+                        mat-raised-button
+                        color="accent"
+                        (click)="login()"
+                        [disabled]="!loginForm.valid"
+                >Sign In
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
