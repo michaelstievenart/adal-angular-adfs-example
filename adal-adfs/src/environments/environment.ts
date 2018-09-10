@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  config: {
+    tenant: '',
+    clientId: '', // Specific to the application that you registered on https://portal.azure.com/
+    redirectUri: 'http://localhost:4200',
+    postLogoutRedirectUri: 'http://localhost:4200',
+    cacheLocation: 'sessionStorage'
+  }
 };
 
 /*
